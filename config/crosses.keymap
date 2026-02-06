@@ -41,17 +41,56 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        sd_e {
+            bindings = <&kp E>;
+            key-positions = <26 27>;
+        };
+
+        df_r {
+            bindings = <&kp R>;
+            key-positions = <27 28>;
+        };
+
+        jk_u {
+            bindings = <&kp U>;
+            key-positions = <31 32>;
+        };
+
+        kl_i {
+            bindings = <&kp I>;
+            key-positions = <33 34>;
+        };
+
+        dot {
+            bindings = <&kp DOT>;
+            key-positions = <45 46>;
+        };
+
+        fg_t {
+            bindings = <&kp T>;
+            key-positions = <28 29>;
+        };
+
+        hj_y {
+            bindings = <&kp Y>;
+            key-positions = <30 31>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "Base";
             bindings = <
-&trans            &trans  &trans               &trans        &trans        &trans        &trans         &trans        &trans       &trans      &trans         &trans
-&kp ESC           &kp Q   &kp W                &trans        &trans        &trans        &trans         &trans        &trans       &kp O       &kp P          &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A   &kp S                &holdtap E D  &holdtap R F  &holdtap T G  &holdtap Y H   &holdtap U J  &kp K        &kp L       &kp SEMICOLON  &kp RET
-&kp LEFT_CONTROL  &kp Z   &holdtap LEFT_ALT X  &kp C         &kp V         &kp B         &kp B          &holdtap M N  &kp COMMA    &kp PERIOD  &kp SLASH      &kp RIGHT_SHIFT
-                                               &lt 1 SPACE   &mkp LCLK     &mkp RCLK     &kp RIGHT_ALT  &mo 2         &lt 1 SPACE
+&trans            &trans  &trans               &trans       &trans     &trans     &trans         &trans  &trans       &trans     &trans         &trans
+&kp ESC           &kp Q   &kp W                &trans       &trans     &trans     &trans         &trans  &trans       &kp O      &kp P          &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A   &kp S                &kp D        &kp F      &kp G      &kp H          &kp J   &kp K        &kp L      &kp SEMICOLON  &kp RET
+&kp LEFT_CONTROL  &kp Z   &holdtap LEFT_ALT X  &kp C        &kp V      &kp B      &kp B          &kp N   &kp M        &kp COMMA  &kp SLASH      &kp RIGHT_SHIFT
+                                               &lt 1 SPACE  &mkp LCLK  &mkp RCLK  &kp RIGHT_ALT  &mo 2   &lt 1 SPACE
             >;
         };
 

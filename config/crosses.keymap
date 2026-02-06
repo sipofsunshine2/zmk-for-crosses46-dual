@@ -61,7 +61,7 @@
 
         kl_i {
             bindings = <&kp I>;
-            key-positions = <33 34>;
+            key-positions = <32 21>;
         };
 
         dot {
